@@ -1,0 +1,185 @@
+04.13 7:45 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaurya Engineering Works</title>
+
+<!-- SEO -->
+<meta name="description" content="Shaurya Engineering Works - Lathe machine work, machining services, custom parts.">
+<meta name="keywords" content="lathe machine, machining, engineering works, custom parts">
+<meta name="author" content="Jaswant Singh">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b0f19;color:#e5e7eb;overflow-x:hidden}
+
+.glass{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,0.1);
+  box-shadow:0 8px 30px rgba(0,0,0,0.4);
+}
+
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 40px;position:sticky;top:0;z-index:10
+}
+nav a{margin-left:20px;text-decoration:none;color:#9ca3af}
+nav a:hover{color:#38bdf8}
+
+.hero{
+  height:90vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;text-align:center;
+  position:relative;overflow:hidden;
+}
+
+/* Background Lathe */
+.lathe-bg{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:url('https://images.unsplash.com/photo-1581091215367-59ab6b5b7f5c') center/cover no-repeat;
+  opacity:0.08;
+  animation:zoomBg 20s ease-in-out infinite alternate;
+}
+@keyframes zoomBg{
+  from{transform:scale(1)}
+  to{transform:scale(1.1)}
+}
+
+/* Gears */
+.gear{
+  position:absolute;
+  width:80px;height:80px;
+  border:4px dashed rgba(255,255,255,0.2);
+  border-radius:50%;
+  animation:spin 6s linear infinite;
+}
+.gear1{top:20%;left:20%}
+.gear2{top:60%;left:70%;animation-direction:reverse}
+.gear3{top:40%;left:50%;width:60px;height:60px;animation-duration:4s}
+
+@keyframes spin{
+  from{transform:rotate(0)}
+  to{transform:rotate(360deg)}
+}
+
+.hero h2{font-size:48px;margin-bottom:15px;z-index:2}
+.hero p{color:#9ca3af;margin-bottom:25px;z-index:2}
+
+.btn{
+  padding:12px 25px;background:#38bdf8;border:none;
+  border-radius:10px;color:#020617;font-weight:600;
+  cursor:pointer;z-index:2
+}
+
+.section{padding:80px 20px;max-width:1100px;margin:auto}
+.section h3{text-align:center;font-size:32px;margin-bottom:40px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{padding:25px;border-radius:18px}
+.card:hover{transform:translateY(-8px)}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.image-box{height:200px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#9ca3af}
+
+.contact-box{padding:30px;border-radius:18px;text-align:center}
+
+footer{text-align:center;padding:20px;background:#020617;color:#6b7280;margin-top:40px}
+
+.whatsapp{
+  position:fixed;bottom:20px;right:20px;
+  background:#25D366;color:white;padding:15px;
+  border-radius:50%;font-size:22px;text-decoration:none
+}
+</style>
+</head>
+
+<body>
+
+<header class="glass">
+  <h1>Shaurya Engineering Works</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="lathe-bg"></div>
+  <div class="gear gear1"></div>
+  <div class="gear gear2"></div>
+  <div class="gear gear3"></div>
+
+  <h2>Precision Engineering Excellence</h2>
+  <p>High-quality lathe machine work with reliability and precision</p>
+  <button class="btn" onclick="location.href='#contact'">Contact Us</button>
+</section>
+
+<section class="section" id="about">
+  <h3>About Us</h3>
+  <div class="card glass">
+    <p>Shaurya Engineering Works specializes in precision machining and mechanical solutions.</p>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h3>Our Services</h3>
+  <div class="cards">
+    <div class="card glass">Lathe Machine Work</div>
+    <div class="card glass">Custom Parts</div>
+    <div class="card glass">Repair & Maintenance</div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h3>Our Work</h3>
+  <div class="gallery">
+    <div class="image-box glass">Your Image Here</div>
+    <div class="image-box glass">Your Image Here</div>
+    <div class="image-box glass">Your Image Here</div>
+  </div>
+</section>
+
+<section class="section" id="video">
+  <h3>Machine Operations</h3>
+  <div class="card glass" style="text-align:center;">
+    <iframe width="100%" height="500"
+    src="https://www.youtube.com/embed/TyfM93ghFQI?rel=0&modestbranding=1&playsinline=1"
+    frameborder="0" allowfullscreen style="border-radius:16px;">
+    </iframe>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h3>Contact Us</h3>
+  <div class="contact-box glass">
+    <p><strong>Proprietor:</strong> Jaswant Singh</p>
+    <p><strong>Email:</strong> shauryasinghgame@gmail.com</p>
+    <p><strong>Phone:</strong> +91 8169531076</p>
+    <p><strong>Address:</strong> Your workshop address</p>
+
+    <div style="margin-top:20px;">
+      <iframe src="https://www.google.com/maps?q=QXgVrsSWv2LcU9VZA&output=embed"
+      width="100%" height="250" style="border:0;border-radius:12px;"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Shaurya Engineering Works
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918169531076" target="_blank"></a>
+
+</body>
+</html>
